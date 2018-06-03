@@ -1,0 +1,16 @@
+@import "../../../styles/var";
+
+.b-sprint-start {
+  margin-bottom: rem(20);
+  background-color: $gray-98;
+  box-shadow: 0 rem(2) rem(3) rgba(0,0,0,.15);
+  &__body {
+    display: flex;
+    justify-content: center;
+    padding: rem(10) 0;
+    height: rem(150);
+  }
+}
+
+
+

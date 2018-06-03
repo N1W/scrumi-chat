@@ -1,0 +1,21 @@
+.b-backlog__nav {
+  z-index: 99999;
+  cursor: pointer;
+  width: 1.875rem;
+  height: 5rem;
+  opacity: 0.75;
+  background-position: center center;
+  border-radius: 0.1875rem;
+  cursor: pointer;
+  &--prev {
+    left: 0;
+    background-image: url(img/prev.png);
+  }
+  &--next {
+    right: 0;
+    background-image: url(img/next.png);
+  }
+  &:hover {
+    opacity: 1;
+  }
+}

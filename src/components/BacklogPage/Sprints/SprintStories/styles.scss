@@ -1,0 +1,59 @@
+@import "../../../../styles/var";
+
+.b-sprint-list {
+  //content: '';
+  //outline: 1px solid #333;
+  width: 50%;
+  height: 100%;
+  overflow-y: auto;
+  border: rem(1) solid #aaa;
+  &::-webkit-scrollbar {
+    margin: 0 5px;
+    width: rem(10);
+    height: rem(10);
+    &-track {
+      background-color: #ededed;
+    }
+    &-thumb {
+      background-color: $blue;
+      border-radius: rem(6);
+      border: 0;
+      box-shadow: inset 0 0 0 0.125rem #fff;
+    }
+  }
+
+  &__item {
+    display: flex;
+    font-size: rem(14);
+    align-items: center;
+    padding: rem(5) 0;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+  }
+  &__number {
+    padding: 0 rem(10);
+  }
+  &__text {
+
+  }
+  &__btn {
+    margin-left: auto;
+    margin-right: rem(5);
+    padding: 0;
+    line-height: 0;
+    color: $red;
+    display: none;
+    cursor: pointer;
+    height: 0.675rem;
+    width: 0.675rem;
+    background-image: url(img/cross.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: contain;
+  }
+  &__item:hover .b-sprint-list__btn {
+    display: block;
+  }
+}

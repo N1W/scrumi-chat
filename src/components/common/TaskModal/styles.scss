@@ -1,0 +1,271 @@
+@import '../../../styles/theme';
+
+/////OVERLAY/////
+
+.b-task-modal {
+  background-color: rgba(64, 64, 65, .5);
+  position: fixed;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/////BODY/////
+
+.b-task-modal__body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: rem(30) rem(36);
+  border-radius: rem(2);
+  background-color: #fafafa;
+}
+
+/////HEADER/////
+
+.b-task-modal {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    font-size: rem(11);
+  }
+
+  &__inpt {
+    width: 85%;
+    padding: rem(10);
+  }
+
+  &__points {
+    width: 9%;
+    padding: rem(10);
+  }
+}
+
+.b-color-picker {
+  border-radius: rem(3);
+  box-shadow: inset 0 rem(1) rem(2) #ccc;
+  width: rem(30);
+  height: inherit;
+  cursor: pointer;
+  background: none;
+  &:focus{
+    outline: none;
+  }
+}
+.b-task-modal__sections{
+  display: flex;
+}
+
+.b-task-modal {
+  & section {
+    display: flex;
+    flex-direction: column;
+    padding: rem(24) rem(24) rem(28);
+  }
+}
+
+/////DESCR/////
+
+.b-descr {
+  width: rem(350);
+  margin-bottom: rem(18);
+  & select{
+    -webkit-appearance: button;
+    font-size: inherit;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 180px;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+    box-shadow: inset 0 rem(.5) rem(1) #ccc;
+    &:focus{
+      outline: none;
+    }
+  }
+  &__header {
+    margin: 0 0 rem(8) 0;
+    text-align: center;
+    font: rem(16);
+    font-weight: 500;
+  }
+
+  &__textarea {
+    width: 100%;
+    height: rem(125);
+    resize: none;
+    font-size: rem(13);
+    background-repeat: no-repeat;
+    background-position: right rem(10) bottom rem(10);
+    &::-webkit-scrollbar {
+      width: rem(10);
+      height: rem(10);
+      &-track {
+        background-color: #ededed;
+      }
+      &-thumb {
+        background-color: $blue;
+        border-radius: rem(6);
+        border: 0;
+        box-shadow: inset 0 0 0 0.125rem #fff;
+      }
+    }
+  }
+  &__info {
+    padding-left: 0;
+  }
+
+  &__info-item {
+    margin-top: rem(9);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: rem(12);
+    color: #3189d6;
+
+  }
+
+  &__info-title {
+    display: inline-block;
+    width: rem(111);
+    color: #000;
+    padding-left: rem(10);
+    margin-right: rem(5);
+  }
+  & input{
+    margin-left: rem(5);
+    border: none;
+    background: transparent;
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+//////CHECKLIST//////
+
+.b-checklist {
+  width: rem(350);
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: rem(8);
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 30%;
+    font-size: rem(16);
+    font-weight: 500;
+  }
+
+  &__counter {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: rem(12);
+  }
+
+  &__done {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #cccccc;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: rem(6.5) 0;
+    margin: 0;
+    border-top: rem(1) solid #cccccc;
+    font-size: rem(12);
+    position: relative;
+
+    &:last-child {
+      border-bottom: rem(1) solid #cccccc;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover .b-checklist__btn-del {
+      visibility: visible;
+      background-image: url(img/cart.svg);
+      background-color: transparent;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__btn-del {
+    visibility: hidden;
+    height: rem(15);
+    border: 0;
+    position: absolute;
+    right: rem(5);
+  }
+
+
+
+  &__text{
+    margin: 0 rem(10);
+  }
+
+  &__check{
+    margin-left: rem(5);
+  }
+
+  &__footer {
+    text-align: center;
+    margin-top: auto;
+  }
+
+  &__btn {
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+///////FOOTER//////
+
+.b-task-modal__footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.875rem auto 0;
+  position: relative;
+  width: 46%;
+
+  & .b-task-modal__btn {
+    width: rem(146);
+    height: rem(40);
+    margin: 0 rem(10);
+  }
+
+  & .b-task-modal__btn-del {
+    position: absolute;
+    left: -15%;
+    transform: translateX(-100%);
+    width: 1.125rem;
+    height: 1.375rem;
+    top: .5625rem;
+    border: none;
+    background-image: url(img/cart.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+  }
+}
+
+.b-task-modal__btn-close {
+  cursor: pointer;
+  position: absolute;
+  color: $gray-50;
+  top: rem(10);
+  right: rem(10);
+  font-size: rem(12);
+  background-color: transparent;
+}

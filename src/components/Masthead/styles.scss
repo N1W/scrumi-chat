@@ -1,0 +1,29 @@
+@import "../../styles/var";
+
+.header {
+  padding: rem(10) rem(110);
+  background: #2f332e;
+  font-size: 0.812rem;
+  line-height: 1rem;
+  display: grid;
+  grid-template: 1fr /rem(200) rem(474) rem(72);
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rem(0) rem(2) rem(0) rem(0) #262626;
+  @media (max-width: 940px) {
+    padding: rem(10) rem(50);
+  }
+  @media (max-width: 800px) {
+    padding: rem(10) rem(20);
+  }
+  @media (max-width: 700px) {
+    padding: rem(10) rem(10);
+  }
+
+  &__logo {
+    width: rem(200);
+    @media (max-width: 800px) {
+      width: rem(152)
+    }
+  }
+}

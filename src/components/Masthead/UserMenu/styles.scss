@@ -1,0 +1,39 @@
+@import "../../../styles/var";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.user-menu {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  min-height: rem(70);
+  position: relative;
+  text-align: center;
+
+
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: .5rem;
+    background-color: white;
+    border-radius: 50%;
+    background-clip: border-box;
+    border: .125rem solid #fafafa;
+  }
+
+  p {
+    color: $body-color;
+    white-space: nowrap;
+  }
+
+  &__load {
+    position: absolute;
+    width: rem(40);
+    height: rem(40);
+    top: rem(4);
+    opacity: 0;
+  }
+}

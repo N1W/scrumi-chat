@@ -1,0 +1,9 @@
+@import "../../styles/var";
+
+.b-backlog-view {
+  display: flex;
+  flex-direction: column;
+  padding: rem(23) 0 0;
+  min-height: 87vh;
+}
+

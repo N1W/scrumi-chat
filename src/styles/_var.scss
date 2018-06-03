@@ -1,0 +1,102 @@
+// Function pixels to rems:
+// You can wright only rem(ANY), its means that you transformed ANYpx to rem in your code
+
+@function rem($px) {
+  $rems: $px / 16;
+  @return #{$rems}rem;
+}
+
+// Colors:
+$white:               #ffffff;                  //white
+
+$blue-dark:           #054a8d;                  //Congress Blue
+$blue:                #3189d6;                  //Curious Blue
+$blue-light:          #95d5e1;                  //Morning Glory
+
+$body-color:          #f5f5f6;
+$gray-header:         #2f332e;                  //Heavy Metal
+$black:               #000;
+
+$gray-25:             lighten($black, 25%);     //Tundora           - #404040
+$gray-33:             lighten($black, 33%);     //                  - #545454
+$gray-40:             lighten($black, 40%);     //                  - #666
+$gray-50:             lighten($black, 50%);     //Gray              - #808080
+$gray-51:             lighten($black, 51%);     //                  - #828282
+$gray-57:             lighten($black, 57%);     //                  - #919191
+$gray-60:             lighten($black, 60%);     //Dusty Gray        - #999
+$gray-80:             lighten($black, 80%);     //                  - #ccc
+$gray-98:             lighten($black, 98%);     //                  - #fafafa
+
+$green-dark:          #188500;                  //Japanese Laurel
+$green:               #1faa00;                  //Limeade
+$green-light:         #7ac535;                  //Atlantis
+
+$brown:               #383011;                  //Woodrush
+$red:                 #f25520;                  //Flamingo
+$yellow:              #fae716;                  //Lemon
+
+// Gradients:
+
+$top-green:           #64dd17;
+$bot-green:           #59c714;
+$top-red:             $red;
+$bot-red:             #d94b1c;
+$top-gray:            #ababab;
+$bot-gray:            #949494;
+$top-blue:            #71b6de;
+$bot-blue:            #629dbf;
+
+$grad-green:          linear-gradient($top-green, $bot-green);
+$grad-green-neg:      linear-gradient($bot-green, $top-green);
+$grad-red:            linear-gradient($top-red, $bot-red);
+$grad-red-neg:        linear-gradient($bot-red, $top-red);
+$grad-gray:           linear-gradient($top-gray, $bot-gray);
+$grad-gray-neg:       linear-gradient($bot-gray, $top-gray);
+$grad-blue:           linear-gradient($top-blue, $bot-blue);
+$grad-blue-neg:       linear-gradient($bot-blue, $top-blue);
+
+// Shadows:
+
+$sh-button-inset:     inset 0 rem(1) rem(1) rgba(255,255,255,.34);
+
+$sh-button-green:     $sh-button-inset, 0 rem(1) 0 0 $green-dark;
+$sh-button-red:       $sh-button-inset, 0 rem(1) 0 0 #913313;
+$sh-button-gray:      $sh-button-inset, 0 rem(1) 0 0 $gray-40;
+$sh-button-blue:      $sh-button-inset, 0 rem(1) 0 0 #3e647a;
+$sh-button-active:    inset 0 rem(1) rem(1) #545454;
+$sh-button-font:      0 rem(1) 0 $gray-33;
+$sh-input:            inset 0 rem(1) rem(2) $gray-80;
+$sh-input-focus:            inset 0 rem(1) rem(2) $gray-60;
+
+$sh-button-round:     0 rem(2) 0 0 rgba(0,0,0,.05);
+$sh-avatar-hover:   0 rem(2) 0 0 rgba(0,0,0,.2);
+
+// Borders:
+
+$border-rad:          rem(3);
+$border-rad-button:   rem(4);
+
+$border-button-green: rem(1) solid $green;
+$border-button-red:   rem(1) solid $red; //bd4219;
+$border-button-gray:  rem(1) solid #808080;
+$border-button-blue:  rem(1) solid $blue; //#5e97b8;
+$border-avatar-s:     2px solid white;
+$border-avatar-l:     3px solid white;
+
+
+// Animation:
+$animation-speed: 0.3s;
+
+
+/*     ----------------- Typography -------------------     */
+
+$font: 'Roboto', 'Arial', sans-serif;
+
+// Font colors:
+$fc-gray-main:        $gray-25;   // 404040              // main text color
+$fc-gray-white:       $gray-50;   // 808080              // lighter text color, use it on bg-color #fff for most contrast $fc-gray-main
+$fc-gray-light:       $gray-60;   // 999                 // lighter text color
+
+$link-color:          $blue;      // 3189d6              // links
+$fc-red:              $red;                              // alert and warnings
+$fc-code:             $brown;     // Woodrush            // color for code-quote in chat

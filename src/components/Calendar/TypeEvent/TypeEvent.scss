@@ -1,0 +1,42 @@
+@import "../../../styles/var";
+.c-type-list {
+  width: rem(188);
+  font-size: rem(14);
+  background: #fff;
+  border-radius: 0 0 rem(5) rem(5);
+  box-shadow: 0 rem(2) rem(5) 0 #a9a9a9;
+  list-style: none;
+  position: absolute;
+  top: rem(38);
+  right: rem(1);
+  z-index: 1;
+  &__item {
+    position: relative;
+    padding: rem(7) rem(10);
+    cursor: pointer;
+  }
+  &__item:hover {
+    background-color: #ececec;
+  }
+  &__item::after {
+    content: '';
+    position: absolute;
+    top: rem(10);
+    left: 86%;
+    width: rem(11);
+    height: rem(11);
+    background-color: #ececec;
+  }
+  &__item--standup::after {
+    background-color: $green-light;
+  }
+  &__item--demo::after {
+    background-color: $link-color;
+  }
+  &__item--retro::after {
+    background-color: $red;
+  }
+  &__item--sprint::after {
+    background-color: $yellow;
+  }
+}

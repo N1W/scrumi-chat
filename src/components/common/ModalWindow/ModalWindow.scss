@@ -1,0 +1,32 @@
+@import '../../../styles/var';
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(64,64,65,0.5);
+    display: flex;
+    z-index: 1;
+}
+.modal {
+    width: rem(692);
+    height: rem(351);
+    background: #fafafa;
+    border-radius: 3px;
+    display: flex;
+    margin: auto;
+    position: relative;
+
+    &__close{
+        cursor: pointer;
+        position: absolute;
+        color: $gray-50;
+        top: rem(10);
+        right: rem(10);
+        font-size: rem(12);
+    }
+}
+
+

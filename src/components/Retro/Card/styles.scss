@@ -1,0 +1,140 @@
+@import '../../../styles/_var.scss';
+
+.card {
+  //flex-basis: 30%;
+  //flex-shrink: 0;
+  //flex-grow: 1;
+  margin: .5rem;
+  //max-width: 27rem;
+
+}
+
+@media (max-width: 1072px) {
+  .retro__box--narrow .card {
+    //flex-basis:30%;
+    //max-width: 27rem;
+  };
+}
+
+@media (min-width: 1400px){
+  .card {
+    //flex-basis: 20%;
+  }
+}
+
+
+.user_card {
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+  font-family: 'Roboto', sans-serif;
+  font-size: .8rem;
+  line-height: 1rem;
+  background: #fafafa;
+  box-shadow: 0 2px 0 #e6e6e6;
+  padding: .5rem;
+  &:hover {
+    background: #fff;
+  }
+  &-dragged {
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .5);
+  }
+}
+
+.user_content {
+  max-height: 7rem;
+  min-height: 7rem;
+  text-align: left;
+  color: #404040;
+  overflow: hidden;
+  cursor: pointer;
+  word-wrap: break-word;
+  white-space: pre-line;
+}
+
+.user_info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: .5rem;
+  padding-top: .5rem;
+  border-top: 1px solid #e6e6e6;
+  //cursor: move;
+}
+
+.user_photo {
+  width: 1.6rem;
+  height: 1.6rem;
+  cursor: pointer;
+}
+
+.flag {
+  width: .5rem;
+  height: .6rem;
+  margin-top: .5rem;
+  cursor: pointer;
+}
+
+.button-flag {
+  background: #fafafa;
+  border: none;
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.flag_icon {
+  display: flex;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  width: 20px;
+  height: 23px;
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.button-trash {
+  display: flex;
+  justify-content: flex-end;
+  background: #fafafa;
+  border: none;
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.trash_icon {
+  display: flex;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  width: 19px;
+  height: 22px;
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.label_flag {
+  position: relative;
+  top: 3px;
+  right: 10px;
+  width: 15px;
+  height: 18px;
+  background-image: url(img/flague-grey.svg);
+  cursor: pointer;
+}
+
+.checkbox_flag {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+
+  &:checked + .label_flag {
+    background-image: url(img/flague.svg);
+  }
+}
+

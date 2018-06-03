@@ -1,0 +1,14 @@
+@import'../../../../styles/var';
+.triangle {
+  width: 0;
+  height: 0;
+  border-bottom: rem(10) solid rgba(0, 0, 0, 0.2);
+  border-left: rem(10) solid transparent;
+  position: absolute;
+  right: rem(-2);
+  bottom: rem(-2);
+
+  &--hide{
+    display: none;
+  }
+}

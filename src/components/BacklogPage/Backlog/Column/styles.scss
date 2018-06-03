@@ -1,0 +1,33 @@
+@import "../../../../styles/var";
+
+.b-backlog__column {
+  flex-basis: 25%;
+  flex-shrink: 0;
+  text-align: center;
+  max-width: rem(200);
+  min-width: rem(166);
+}
+
+.b-backlog__column-head {
+  padding: 0 rem(10) rem(30);
+  border-bottom: rem(1) solid #e6e6e6;
+  box-shadow: 0 1px 0 white;
+  margin-bottom: rem(20);
+}
+
+.stories {
+  padding: rem(10);
+  & div {
+    margin-bottom: rem(10);
+  }
+}
+
+.b-story-card {
+  &__text {
+    text-align: left;
+    word-wrap: break-word;
+  }
+  &__footer {
+    padding: 0;
+  }
+}

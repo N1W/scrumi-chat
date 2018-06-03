@@ -1,0 +1,99 @@
+@import '../../../styles/_var.scss';
+.modalRetro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-color: #fafafa;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  background: #fafafa;
+  width: 66vw;
+  max-width: 800px;
+  height: 70vh;
+  border-radius: 3px;
+  padding: 1rem;
+  &__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+  &__header-text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #404040;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    width: 100%;
+  }
+  &__inside-content {
+    padding: 1rem;
+  }
+  &__text-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  &__add {
+    margin-top: 0.5rem;
+  }
+  &__input {
+    width: 100%;
+    border-radius: 3px;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+  }
+  &__input-header {
+    font-size: 1rem;
+    color: #404040;
+    font-weight: 400;
+  }
+  &__button-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0 1rem 0;
+  }
+  &__button-cancel {
+    width: 145px;
+  }
+}
+
+// ====SCROLL==== //
+.modalRetro__wrapper {
+  &::-webkit-scrollbar-track {
+    background-color: #ededed;
+  }
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: #ededed;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-clip: content-box;
+    border: 2px solid transparent;
+    background-color: #3189d6;
+  }
+}
+
+// ====MODAL==== //
+.open_sticker {
+  display: flex;
+  justify-content: center;
+  width: 50rem;
+  height: 24rem;
+}
+
+.open_sticker__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    margin: rem(20);
+  }
+}
+

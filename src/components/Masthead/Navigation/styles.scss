@@ -1,0 +1,65 @@
+@import "../../../styles/var";
+
+.menu {
+  display: flex;
+  //justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  li {
+    padding: 0 rem(21);
+  }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: rem(70);
+
+    &:hover {
+      color: $white;
+    }
+
+    &:hover .menu__icon {
+      background: $green-dark;
+      &:before {
+        border-top: 2px solid $green-dark;
+      }
+    }
+  }
+
+  &__icon {
+    width: rem(40);
+    height: rem(40);
+    background: $green;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    position: relative;
+
+    &:before {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 46px;
+      height: 46px;
+      top: -5px;
+      right: -5px;
+      border-radius: 50%;
+      border-top: 2px solid $green;
+      border-right: 2px solid transparent;
+      border-bottom: 2px solid transparent;
+      border-left: 2px solid transparent;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    &--img {
+      margin: auto;
+    }
+  }
+  &__title {
+    color: $white;
+  }
+}
+
+

@@ -1,0 +1,135 @@
+/*
+* Style imports
+*/
+@import "../../../../styles/var";
+
+.b-tasks {
+  //width: 46.5%;
+  width: 100%;
+  margin-top: rem(21);
+
+  &__header{
+    display: flex;
+    text-align: center;
+    position: relative;
+  }
+  &__title {
+    text-align: center;
+    width: 100%;
+    color: $gray-25;
+    font-size:rem(16);
+    font-weight: 400;
+  }
+  &__counter {
+    font-size: rem(11);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__done {
+    color: $gray-60;
+  }
+  .b-add-item__input {
+    width: 100%;
+  }
+
+  &__list {
+    list-style: none;
+    //margin: rem(10) 0;
+    min-height: rem(20);
+    max-height: rem(265);
+    margin: rem(10) 0;
+    padding-right: rem(4);
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: rem(10);
+      height: rem(10);
+      &-track {
+        background-color: #ededed;
+      }
+      &-thumb {
+        background-color: $blue;
+        border-radius: rem(6);
+        border: 0;
+        box-shadow: inset 0 0 0 0.125rem #fff;
+      }
+    }
+  }
+
+  &__item {
+    background-color: white;
+    margin-bottom: rem(5);
+    max-height: rem(40);
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+
+    &:hover {
+      background-color: #eee;
+
+      & .b-tasks__btn-del {
+        display: block;
+        cursor: pointer;
+        color: $gray-80;
+        &:hover {
+          color: $gray-50;
+        }
+      }
+      & .b-tasks__idx {
+        color: transparent;
+      }
+    }
+  }
+
+  &__idx {
+    width: rem(34);
+    margin: auto 0;
+    font-size: rem(11);
+    text-align: center;
+    color: $gray-50;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    font-size: rem(12);
+    padding: rem(7) 0 rem(7);
+    width: rem(311);
+    cursor: default;
+  }
+
+  &__text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: rem(10);
+    height: rem(3);
+    background-color: $blue;
+    bottom: 0;
+    left: rem(34);
+  }
+
+  &__btn-del {
+    display: none;
+    position: absolute;
+    top: rem(8);
+    left: rem(12);
+    padding: rem(10) rem(4);
+    width: rem(10);
+    height: rem(15);
+    background: url(../img/cart.svg) no-repeat;
+    border: none;
+  }
+  &__footer {
+    text-align: center;
+    height: 2rem;
+    .b-add-item__input {
+      width: 100%;
+      font-size: rem(12);
+      padding-left: rem(34) !important;
+    }
+  }
+}
+
+.cls-1 {
+  fill: $gray-50;
+}

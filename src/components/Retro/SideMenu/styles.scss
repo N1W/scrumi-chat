@@ -1,0 +1,42 @@
+.sidemenu_wrapper {
+  position: absolute;
+  right: 0;
+  top: 130px;
+}
+
+.side_sticker {
+  background-color: grey;
+  width: 2rem;
+  height: 10rem;
+  border-radius: 10px 0 0 10px;
+  writing-mode:vertical-rl;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+
+.side_menu {
+  width: 14rem;
+  height: 50rem;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 10px 0;
+  border-radius: 7px 0 0 7px;
+}
+
+.side_menu_cont {
+  display: flex;
+  align-items: center;
+  height: 50rem;
+
+}
+
+
+

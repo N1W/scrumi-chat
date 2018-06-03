@@ -1,0 +1,27 @@
+@import '../../../../styles/var';
+
+.event {
+  grid-area: event;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+
+  .button-green {
+    padding: 0 rem(10);
+    border-radius: .25rem 0 0 .25rem;
+    border-right: none;
+    width: rem(155);
+
+    &--caret {
+      border-left: none;
+      border-color: $green-dark;
+      background: $bot-green;
+      width: rem(35);
+      border-radius: 0 .25rem .25rem 0;
+      font-size: rem(8);
+      &:hover {
+        background: $green-dark
+      }
+    }
+  }
+}

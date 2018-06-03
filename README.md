@@ -1,1 +1,1 @@
-# scrumi-chat
+Scrumi project

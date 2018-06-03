@@ -1,0 +1,72 @@
+@import '../../../styles/var';
+.date-picker {
+  width: rem(230);
+  outline: $gray-80 solid 1px;
+  position: absolute;
+  background: #fff;
+  padding: rem(10);
+  color: $black;
+  box-sizing: border-box;
+  z-index: 10;
+  left: rem(137);
+
+&__grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  background: #ededed;
+}
+
+&__week-days {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background: #fff;
+  justify-content: space-between;
+}
+  &__week-day {
+    background: #808080;
+    width: rem(28);
+    text-align: center;
+    line-height: rem(29);
+    color: #fff;
+    font-weight: bold;
+  }
+  &_sunday-day {
+    color: #fff;
+    background: $red;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:0 0 rem(10) 0;
+}
+  &__prev,
+  &__next{
+    width: rem(25);
+    height: rem(10);
+    cursor: pointer;
+  }
+
+  &__prev {
+    background:url("img/black_left.svg") no-repeat center;
+  }
+
+  &__prev:hover,
+  &__prev:active {
+    background:url("img/left.svg") no-repeat center;
+  }
+
+  &__next {
+    background: url("img/black_right.svg") no-repeat center;
+  }
+
+  &__next:hover,
+  &__next:active {
+    background:url("img/right.svg") no-repeat center;
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../../../styles/var";
+
+.b-backlog__list {
+  display: flex;
+  align-self: stretch;
+  overflow-y: hidden;
+  overflow-x: auto;
+  flex-grow: 1;
+  padding-bottom: rem(10);
+  &::-webkit-scrollbar {
+    width: rem(10);
+    height: rem(10);
+    &-track {
+      background-color: #ededed;
+    }
+    &-thumb {
+      background-color: $blue;
+      border-radius: rem(6);
+      border: 0;
+      box-shadow: inset 0 0 0 0.125rem #fff;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../../../styles/var';
+
+.g-time-picker {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    display: flex;
+    flex-basis: 50px;
+    justify-content: center;
+
+    //outline: red, 1px solid;
+    //margin: rem(15);
+
+    &__time {
+        width: rem(65);
+        height: rem(35);
+        margin: rem(15) rem(15) 0 rem(15);
+        padding: rem(3);
+        font: rem(13);
+        text-align: center;
+    }
+}

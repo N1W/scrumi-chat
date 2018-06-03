@@ -1,0 +1,29 @@
+@import "../../../../styles/var";
+
+.b-sprint-start__header {
+  padding: rem(3) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #404040;
+  color: #fefefe;
+  font-size: rem(14);
+}
+
+.b-sprint-start__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.b-sprint-start__checked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.625rem;
+  height: 1.625rem;
+  border-radius: 50%;
+  color: #3189d6;
+  background-color: #fff;
+  margin: 0 rem(10);
+}

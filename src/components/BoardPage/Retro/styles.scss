@@ -1,0 +1,9 @@
+.b-board__retro {
+  grid-area: retro;
+  .b-board__col-header {
+    background-color: #fafafa;
+    &:after {
+      border-top-color: #fafafa;
+    }
+  }
+}

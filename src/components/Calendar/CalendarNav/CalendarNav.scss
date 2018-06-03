@@ -1,0 +1,9 @@
+@import './../../../styles/var';
+
+.c-nav {
+  display: grid;
+  grid-template: rem(82) / 1fr rem(288) 0.955fr;
+  grid-template-areas: "period month event";
+  align-items: center;
+}
+

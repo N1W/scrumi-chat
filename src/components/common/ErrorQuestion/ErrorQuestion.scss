@@ -1,0 +1,23 @@
+@import './../../../styles/var';
+
+.question {
+  background: #FEF6F4;
+  //height: rem(39);
+  font-size: rem(12);
+  text-align: center;
+  color: $red;
+  padding: rem(10) rem(5);
+  position: relative;
+  border-left: rem(4) solid $red;
+  width: rem(236);
+}
+.question::after{
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: rem(8) solid $red;
+  border-right: rem(8) solid transparent;
+  position: absolute;
+  bottom: -8px;
+  left: -4px;
+}

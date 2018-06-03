@@ -1,0 +1,69 @@
+@import '../../styles/var';
+
+.wrapper {
+  //position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: .3rem;
+  background: #333;
+  min-height: 970px;
+  //overflow: hidden;
+}
+
+.retro__container {
+  width: 50vw;
+  padding: .5rem .2rem;
+  background-color: #fff;
+  min-height: 478px;
+}
+
+// ====MODAL==== //
+
+.open_sticker {
+  display: flex;
+  justify-content: center;
+  width: 50rem;
+  height: 24rem;
+}
+
+.open_sticker__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    margin: rem(20);
+    width: 145px;
+  }
+}
+
+.demo {
+
+  &__button {
+    max-width: 200px;
+    color: #000;
+    text-shadow: none;
+  }
+
+  &__input {
+    margin-right: 30px;
+  }
+}
+
+//button Add fix
+
+.circle-button-l{
+  &:hover {
+    background: #e1e2e1;
+
+  }
+  &:active {
+    background: #e1e2e1;
+    box-shadow: none;
+  }
+}
+
+
+
+
+
+

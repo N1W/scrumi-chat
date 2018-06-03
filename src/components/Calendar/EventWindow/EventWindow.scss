@@ -1,0 +1,187 @@
+@import './../../../styles/var';
+
+.c-event-window {
+  display: grid;
+  grid-template: rem(40) 1fr rem(40)/repeat(5, 1fr) rem(150);
+  grid-gap: rem(20) 0;
+  padding: rem(30) rem(35);
+  font-family: $font;
+
+  &__event-title {
+    grid-column: span 5;
+    align-self: center;
+    width: rem(448);
+    height: rem(33);
+    font-size: rem(14);
+  }
+
+  &__types {
+    height: rem(35);
+    align-self: center;
+  }
+
+  &__event-type {
+    width: 100%;
+    background-color: #fff;
+    font-size: rem(13);
+    font-weight: 400;
+    line-height: 35.257px;
+    text-align: left;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: inset 0 0.0625rem 0.125rem #ccc;
+    letter-spacing: rem(0.30);
+    color: $gray-25;
+  }
+  .c-type-list{
+    width: rem(148);
+    position: absolute;
+    top: rem(80);
+    right: rem(37);
+    color: $gray-25;
+
+    &:before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: rem(11) solid transparent;
+      border-right: rem(11) solid transparent;
+      border-bottom: rem(11) solid $white;
+      position: absolute;
+      top: rem(-11);
+      right: rem(9);
+
+    }
+  }
+  .c-type-list__item:after{
+    left: rem(122);
+  }
+
+  .date-block {
+    grid-column: span 3;
+    display: grid;
+    grid-template: repeat(3, rem(15))/rem(121) rem(160);
+    grid-gap: rem(20) rem(10);
+    justify-self: center;
+    align-content: center;
+    font-size: .75rem;
+
+    &__title {
+      justify-self: end;
+    }
+
+    &__date {
+      color: $blue;
+      cursor: pointer;
+      outline: none;
+    }
+
+    &__checkbox {
+      justify-self: end;
+    }
+
+    label {
+      align-self: center;
+    }
+  }
+
+  .info {
+    grid-column: span 3;
+    display: grid;
+    grid-template: rem(18) rem(85) rem(35)/rem(290);
+    justify-content: end;
+    grid-gap: rem(15);
+    position: relative;
+    &__title {
+      text-align: center;
+      font-size: rem(16);
+    }
+
+    &__description {
+      font-size: .73rem;
+    }
+    &:after {
+      content: url("img/symbol_write.svg");
+      position: absolute;
+      top: rem(93);
+      right: rem(8);
+    }
+    &__location {
+      font-size: rem(13);
+    }
+  }
+
+  .control {
+    grid-column: span 6;
+    display: grid;
+    grid-template: rem(40)/1fr rem(185) rem(165) 1fr;
+    align-self: center;
+    grid-template-areas:
+  "delete cancel save start";
+
+    &__button {
+      width: rem(145);
+      height: rem(35);
+      align-self: center;
+
+      &--delete {
+        grid-area: delete;
+        justify-self: end;
+        width: rem(19);
+        background: url("img/basket.svg") no-repeat center;
+      }
+
+      &--cancel {
+        grid-area: cancel;
+        justify-self: center;
+      }
+
+      &--save {
+        grid-area: save;
+        justify-self: end;
+      }
+    }
+    &__start {
+      grid-area: start;
+      align-self: center;
+      justify-self: end;
+      font-size: rem(14);
+    }
+  }
+
+    .c-close {
+      position: absolute;
+      top: rem(-40);
+      right: rem(-221);
+    }
+
+    .c-cancel {
+      position: absolute;
+      bottom: rem(76);
+      left: rem(267);
+    }
+
+    .c-delete {
+      position: absolute;
+      bottom: rem(75);
+      left: rem(159);
+    }
+
+    .c-error-title {
+      position: absolute;
+      top: rem(-18);
+      left: rem(42);
+    }
+
+    .c-error-start {
+       position: absolute;
+       top: rem(79);
+       left: rem(195);
+     }
+
+    .c-error-end {
+      position: absolute;
+      top: rem(113);
+      left: rem(195);
+    }
+}

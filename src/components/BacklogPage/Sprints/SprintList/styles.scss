@@ -1,0 +1,10 @@
+.sprints {
+  margin-bottom: 1rem;
+}
+
+.sprint {
+  margin-bottom: 0.5rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

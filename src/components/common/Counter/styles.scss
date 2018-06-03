@@ -1,0 +1,17 @@
+.counter {
+  position: absolute;
+  right: -6px;
+  bottom: -4px;
+  width: 18px;
+  height: 18px;
+  display: none;
+  border-radius: 50%;
+  background: #f25520;
+  color: #fff;
+}
+
+.counter_active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

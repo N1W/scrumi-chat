@@ -1,0 +1,35 @@
+@import '../../../../styles/var';
+
+.date-picker__cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: rem(28);
+  font-size: rem(12);
+  line-height: rem(29);
+  margin-top: rem(2);
+  font-weight: 700;
+  background: $white;
+}
+.date-picker_today {
+  background: $blue;
+  color: white;
+}
+
+.date-picker_other-month {
+  background: $gray-80;
+}
+
+.date-picker_selected-date {
+  background: $green-light;
+  color: white;
+}
+
+.date-picker_sunday {
+  color: $red;
+}
+
+.date-picker_sunday-day {
+  color: #fff;
+  background: $red;
+}

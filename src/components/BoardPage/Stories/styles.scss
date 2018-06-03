@@ -1,0 +1,12 @@
+.b-board__stories {
+  grid-area: stories;
+  .b-board__col-header {
+    background-color: #fafafa;
+    &:after {
+      border-top-color: #fafafa;
+    }
+  }
+  .b-story-card {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,44 @@
+.retro__box {
+  padding: .6rem .8rem 0 .5rem;
+}
+
+.retro__title {
+  margin: 0 .1rem .5rem;
+  padding: 1rem;
+  color: #333;
+  border-radius: .3rem;
+  box-shadow: 0 2px 5px #ccc;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 24px;
+}
+
+.retro__content {
+  display: grid;
+  //display: flex;
+  //flex-flow: row wrap;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  grid-auto-flow: dense;
+  //max-height: 24rem;
+  padding-top: .55rem;
+  //overflow-y: scroll;
+}
+
+.retro__content::-webkit-scrollbar-track {
+  background-color: #ededed;
+  border-radius: .6rem;
+}
+
+.retro__content::-webkit-scrollbar {
+  width: 10px;
+  background-color: #ededed;
+  border-radius: .6rem;
+}
+
+.retro__content::-webkit-scrollbar-thumb {
+  border-radius: .6rem;
+  background-clip: content-box;
+  border: .125rem solid transparent;
+  background-color: #3189d6;
+}

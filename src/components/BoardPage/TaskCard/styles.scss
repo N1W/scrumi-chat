@@ -1,0 +1,59 @@
+@import "../../../styles/theme";
+
+
+.b-task-card {
+  width: 100%;
+  background-color: #fafafa;
+  border-bottom: 1px solid #dadadb;
+  border-radius: rem(5);
+  margin-bottom: rem(10);
+  box-shadow: 0 rem(1) rem(2) rgba(0, 0, 0, .15);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__content {
+    padding: rem(5) 0;
+  }
+
+  &__text {
+    font-size: rem(12);
+    padding: rem(4) rem(10);
+    overflow: hidden;
+    word-break: break-all;
+    text-align: left;
+    max-height: rem(35);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: rem(11);
+    padding: rem(5) rem(10);
+    border-top: 1px solid #ccc;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__ava {
+    height: rem(25);
+    width: rem(25);
+  }
+
+  &__info {
+    text-align: right;
+  }
+
+  &__points {
+    color: $gray-25;
+  }
+
+  &__deadline {
+    color: $gray-50;
+  }
+}

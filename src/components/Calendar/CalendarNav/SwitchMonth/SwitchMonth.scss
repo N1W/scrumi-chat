@@ -1,0 +1,45 @@
+@import "../../../../styles/var";
+.current-month {
+  grid-area: month;
+  display: grid;
+  grid-template: 1fr/ rem(40) rem(170) rem(40);
+  align-items: center;
+  justify-content: center;
+  grid-gap: rem(5);
+
+  &__date {
+    display: flex;
+    flex-direction: column;
+
+    .year {
+      align-self: flex-end;
+      font-size: rem(12);
+    }
+
+    .month {
+      margin-top: rem(-8);
+      font-size: rem(40);
+      text-align: center;
+    }
+  }
+
+  &__arrow {
+    height: rem(12);
+    cursor: pointer;
+    width: rem(35);
+    margin-top: rem(10);
+    &--left {
+      background: url("img/left_black_arrow.svg") no-repeat;
+      &:hover {
+        background: url("img/left_green_arrow.svg") no-repeat;
+      }
+    }
+    &--right {
+      background: url("img/right_black_arrow.svg") no-repeat;
+      justify-self: end;
+      &:hover {
+        background: url("img/right_green_arrow.svg") no-repeat;
+      }
+    }
+  }
+}

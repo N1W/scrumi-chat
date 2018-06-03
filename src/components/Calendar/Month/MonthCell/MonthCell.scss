@@ -1,0 +1,154 @@
+@import'../../../../styles/var';
+
+.c-date__cell {
+  width: 14%;
+  height: rem(140);
+  margin: 2px 0;
+  background: #fafafa;
+  box-shadow: 0 rem(1) rem(1) 0 #a9a9a9;
+  position: relative;
+  .date {
+    display: inline-block;
+    margin: rem(8) rem(10);
+    font-size: rem(26);
+  }
+  .c-event-list {
+    max-height: 90px;
+    overflow: hidden;
+  }
+  .c-type-list {
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+  }
+}
+
+.other-month {
+  background-color: #e6e6e6;
+}
+
+.special {
+  color: $white;
+
+  &--today {
+    background: radial-gradient(circle, #95d5e1, #74a5af);
+    .date::after {
+      content: 'сегодня';
+      margin-left: rem(5);
+      font-size: rem(14);
+    }
+  }
+
+  &--deadline {
+    background: radial-gradient(circle, #f8d34e, #c2a53b);
+  }
+
+  .c-event__time {
+    color: #fff;
+  }
+
+  .c-event {
+    background-color: rgba(47, 51, 46, 0.5);
+    border: none;
+  }
+
+  .c-type-list {
+    color: $black;
+  }
+
+  .c-event--standup {
+    background: $green-light;
+    color: #fff;
+    .c-event__time{
+      color: #fff;
+    }
+    &:hover{
+      background: $green-light;
+    }
+  }
+
+  .c-event--demo {
+    background: $blue;
+    color: #fff;
+    .c-event__time{
+      color: #fff;
+    }
+    &:hover{
+      background: $blue;
+    }
+  }
+
+  .c-event--retro {
+    background: $red;
+    color: #fff;
+    .c-event__time{
+      color: #fff;
+    }
+    &:hover{
+      background: $red;
+    }
+  }
+}
+
+
+.sprint-deadline {
+
+  &__cell {
+    font-size: rem(11);
+    display: block;
+    position: absolute;
+    top: rem(45);
+    left: rem(8);
+    letter-spacing: 0.5px;
+  }
+}
+
+.sprint-duration {
+  border-bottom: rem(3) solid #fae716;
+}
+
+.c-service {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 70%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  &__item {
+    padding-left: rem(3);
+    padding-right: rem(3);
+    font-size: rem(14);
+    color: #fff;
+    margin-top: rem(5);
+    margin-right: rem(5);
+    &--standup {
+      background: $green-light;
+    }
+    &--demo {
+      background: $blue;
+    }
+    &--retro {
+      background: $red;
+    }
+  }
+}
+
+.c-date--event-list {
+  position: absolute;
+  width: 15.2vw;
+  height: auto;
+  top: rem(-15);
+  left: rem(-10);
+  box-shadow: rem(0) rem(3) rem(7) rem(0) rgba(0, 0, 0, 0.5);
+  z-index: 10;
+
+  .c-event-list {
+    max-height: none;
+
+    .circle-button-s {
+      margin: rem(10) 43%;
+    }
+  }
+}
+

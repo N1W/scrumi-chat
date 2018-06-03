@@ -1,0 +1,74 @@
+/*
+* Style imports
+*/
+@import "../../../styles/var";
+
+.b-story-modal {
+  background-color: rgba(64, 64, 65, .5);
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  //left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  //justify-content: center;
+  //align-items: center;
+  z-index: 999999;
+
+  &__body {
+    width: rem(740);
+    margin: auto;
+    padding: rem(30) rem(36);
+    background-color: #fafafa;
+    position: relative;
+    border-radius: $border-rad;
+    box-shadow: 0 rem(1) rem(2) 0 rgba(0,0,0,.15);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__input{
+    width: rem(500);
+    font-size: rem(16);
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    margin: rem(30) auto 0;
+    position: relative;
+    width: 46%;
+  }
+
+  &__btn {
+    width: rem(146);
+  }
+
+  &__btn-close {
+    cursor: pointer;
+    position: absolute;
+    color: $gray-50;
+    top: rem(10);
+    right: rem(10);
+    font-size: rem(12);
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__btn-del {
+    position: absolute;
+    left: -15%;
+    top: rem(8);
+    transform: translateX(-100%);
+    width: rem(18);
+    height: rem(22);
+    background: url(img/cart.svg) no-repeat;
+    border: none;
+  }
+}

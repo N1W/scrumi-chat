@@ -1,0 +1,26 @@
+@import '../../../styles/var';
+.question {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    width: rem(432);
+    height: rem(230);
+    font-weight: bold;
+    &__text{
+        padding: rem(49) 0 rem(31) 0;
+        width: rem(360);
+        text-align: center;
+        border-bottom: rem(1) solid #e5e5e5;
+    }
+    &__buttons {
+        display: flex;
+        margin: rem(30) 0 0;
+        justify-content: space-around;
+        width: rem(350);
+
+        button {
+            width: rem(146)
+        }
+    }
+}

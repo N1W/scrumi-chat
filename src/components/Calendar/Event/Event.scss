@@ -1,0 +1,84 @@
+@import './../../../styles/var';
+
+.c-event {
+    border-top: rem(1) solid #e6e6e6;
+    border-bottom: rem(1) solid #e6e6e6;
+    padding-left: rem(5);
+    font-size: rem(14);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: rem(46);
+    &:hover {
+        background:rgba(0,0,0,.07);
+        cursor: pointer;
+
+    }
+  &:nth-of-type(1) {
+    margin-top: rem(10);
+  }
+
+  &__time {
+    color: $fc-gray-white;
+    display: block;
+  }
+
+  &__cell {
+    width: 72%;
+    word-wrap: break-word;
+    max-height: 34px;
+    overflow: hidden;
+  }
+
+  &--standup {
+    background: $green-light;
+    color: #fff;
+    .c-event__time{
+      color: #fff;
+    }
+    &:hover{
+      background: $green-light;
+    }
+  }
+
+  &--demo {
+    background: $blue;
+    color: #fff;
+    .c-event__time{
+      color: #fff;
+    }
+    &:hover{
+      background: $blue;
+    }
+  }
+
+  &--retro {
+    background: $red;
+    color: #fff;
+    .c-event__time{
+      color: #fff;
+    }
+    &:hover {
+      background: $red;
+    }
+  }
+}
+
+.c-date__add-event {
+  border: rem(3) solid #e6e6e6;
+  border-radius: 50%;
+  padding: rem(10) rem(5);
+  background: none;
+  margin: rem(5) auto;
+  color: $gray-50;
+  font-size: rem(17);
+  line-height: rem(1);
+  text-shadow: none;
+  font-weight: bold;
+  display: block;
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: $green-light;
+  }
+}

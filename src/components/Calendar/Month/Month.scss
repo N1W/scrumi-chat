@@ -1,0 +1,27 @@
+@import'../../../styles/var';
+
+.calendar {
+  padding:0 rem(10);
+
+  .week {
+    display: flex;
+    justify-content: space-between;
+    &__item {
+      width: 14%;
+      height: rem(40);
+      margin: rem(2) 0;
+      line-height: 2.5rem;
+      text-align: center;
+      background-color: #ececec;
+      box-shadow: 0 rem(1) rem(1) 0 #a9a9a9;
+    }
+  }
+
+  .c-work-space {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+
